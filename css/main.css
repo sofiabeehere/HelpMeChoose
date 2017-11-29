@@ -1,12 +1,285 @@
 /* Typography Style */
 
-@font-face { /* Proxima Nova as Main Font*/
+/* Proxima Nova Variants*/
+
+/* Black */
+@font-face {
     font-family: 'Proxima Nova';
-    font-weight: normal;
+    font-weight: 1000;
     font-style: normal;
-    src: url('fonts/BebasNeue.eot');
-    src: url('fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
-        url('fonts/BebasNeue.woff2') format('woff2'),
-        url('fonts/BebasNeue.woff') format('woff'),
-        url('fonts/BebasNeue.ttf') format('truetype');
+    src: url('fonts/ProximaNova-Black.otf');
+ 
+}
+
+/* Extra Bold */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 900;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Extrabld.otf');
+ 
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 800;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Bold.otf');
+ 
+}
+
+/* Semibold */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Semibold.otf');
+ 
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Medium.otf');
+ 
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Regular.otf');
+ 
+}
+
+/* Light */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Light.otf');
+ 
+}
+
+/* Thin */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Thin.otf');
+ 
+}
+
+/* General Styling */
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-family: Proxima Nova;
+	font-weight: 900;
+	font-size: 26px;
+	font-style: italic;
+	color: #383838;
+	margin: 0.5em;
+}
+
+header {
+	/*border-bottom: 1px solid black;*/
+}
+
+.parallax-banner {
+	background-image: url("../img/banner.png");
+	width: 100%;
+	min-height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main {
+	position: relative;
+	background-color: white;
+	top: 200px;
+}
+
+
+/* Browse Programs */
+
+h2 {
+	font-family: Proxima Nova;
+	font-weight: 700;
+	font-size: 26px;
+	color: #A23B23;
+	padding: 1em;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	padding: 0 11%;
+}
+
+button {
+	background: none;
+	border: none;
+	font-family: Proxima Nova;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	padding: 0;
+}
+
+#filter-programs {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-self: flex-start;
+	width: 25%;
+	padding: 1.5em;
+	margin: 0 2em 0.5em 0;
+	background-color: #F6F6F6;
+	border-radius: 8px;
+}
+
+#filter-programs h3 {
+	font-family: Proxima Nova;
+	font-weight: 700;
+	font-size: 12px;
+	color: #A23B23;
+	line-height: 15px;
+}
+
+#filter-programs .search-container {
+	width: 210px;
+	height: 26px;
+}
+
+#filter-programs .search-container img {
+	height: 100%;
+	float: right;
+}
+
+#filter-programs .search-bar {
+	width: 178px;
+	height: 26px;
+	border-radius: 8px;
+	border: transparent;
+}
+
+#filter-programs .search-bar::placeholder {
+	font-family: Proxima Nova;
+	font-weight: 500;
+	font-size: 11px;
+	color: #BEBEBE;
+	padding: 0.5em;
+}
+
+#filter-programs .filter-dropdown {
+	display: block;
+
+}
+
+#filter-programs .dropdown-content input {
+	background-color: white;
+}
+
+#filter-programs .dropdown-content label {
+	font-family: Proxima Nova;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	color: #5F5F5F;
+}
+
+.filter-dropdown button {
+	padding-bottom: 15px;
+	width: 100%;
+	border-bottom: 1px solid #B9B9B9;
+	text-align: left;
+	color: #5F5F5F;
+}
+
+.hide-border {
+	border-bottom: none !important;
+}
+
+.filter-dropdown .dropdown-arrow {
+	float: right;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.checkbox-values {
+	list-style: none;
+	padding: 0;
+	margin: 19.5px 0;
+}
+
+#tuition-slider {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#search-results {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 9;
+	overflow-y: auto;
+}
+
+#search-results>.card {
+	align-self: flex-start;
+	margin: 0 1.5em 1.5em 0;
+	border-radius: 8px;
+	background-color: #F2F7F7;
+}
+
+.card figure {
+	margin: 0;
+}
+
+.card img {
+	border-radius: 8px 8px 0 0;
+}
+
+.card figcaption {
+	margin: 1em;
+	color: #176767;
+}
+
+.card figcaption h4 {
+	font-family: Proxima Nova;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	margin: 0;
+}
+
+.card figcaption p {
+	font-family: Proxima Nova;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 14px;
+}
+
+.card .compare-btn {
+	font-family: Proxima Nova;
+	font-weight: 600;
+	font-size: 9px;
+	width: 105px;
+	height: 22px;
+	color: #176767;
+	background-color: rgba(202, 222, 222, 0.4403);
+	border-radius: 4px;
 }
