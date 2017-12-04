@@ -90,23 +90,69 @@ h1 {
 }
 
 header {
-	/*border-bottom: 1px solid black;*/
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    /* border-bottom: 1px solid black; */
+    position: fixed;
+    z-index: 2;
+    background-color: #DBE3DC;
+    width: 98%;
+    padding: 1em;
+}
+
+header img {
+	display: block;
+}
+
+header .profile-btn {
+	height: 100%;
+	float: right;
+}
+
+header .site-search-bar {
+	    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+header .site-search-bar img {
+	margin: -35px;
+	width: 30px;
+	height: 30px;
+}
+
+header .site-search-bar input {
+	width: 300px;
+	height: 30px;
+	border: none;
+}
+
+header .site-search-bar input::placeholder {
+	font-family: Proxima Nova;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 0 1em;
 }
 
 .parallax-banner {
-	background-image: url("../img/banner.png");
-	width: 100%;
-	min-height: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-image: url(../img/banner.png);
+    width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 270%;
+    position: absolute;
 }
 
 .main {
-	position: relative;
-	background-color: white;
-	top: 200px;
+	    position: relative;
+    background-color: white;
+    top: 240px;
 }
 
 

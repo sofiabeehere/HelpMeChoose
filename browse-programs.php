@@ -13,10 +13,12 @@
 <body>
 
 	<header>  
-		<h1> helpmechoose</h1>
-		<nav>
-			<!-- TO-DO: Define/discuss navigation menu... Is there still a login functionality? -->
-		</nav>
+		<img src = "img/logo.svg">
+		<div class = "site-search-bar">
+			<input type = "text" name = "site-search-bar" placeholder = "Search entire site">
+			<img src = "img/search.png">
+		</div>
+		<img src = "img/profile-icon.png" class = "profile-btn">
 	</header>
 
 	<div class = "parallax-banner">
