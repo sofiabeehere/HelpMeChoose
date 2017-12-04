@@ -143,7 +143,7 @@ header .site-search-bar input::placeholder {
     width: 100%;
     min-height: 100%;
     background-attachment: fixed;
-    background-position: top;
+    background-position: 52% 2%;
     background-repeat: no-repeat;
     background-size: 270%;
     position: absolute;
@@ -275,6 +275,20 @@ button {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	padding-bottom: 1em;
+	justify-content: space-between;
+}
+
+#tuition-slider input {
+	width: 60%;
+}
+
+#tuition-slider p, #tuition-slider label {
+	font-family: Proxima Nova;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 15px;
+	color: #5F5F5F;
 }
 
 #search-results {

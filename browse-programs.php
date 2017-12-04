@@ -129,13 +129,16 @@
 
 					</button>
 
-					<!-- TO-DO: slider for tuition fees -->
-					<div id="tuition-slider">
-						<p> Less than $50 </p>
-					 	<input type="range" min="0" max="100" value="50" class="slider" id="tuitionSlider" name = "tuition-slider">
-					 	<p> $200+ </p>
-					 	<label for = "tuition-slider" style = "width: 100%;
-	    text-align: center;"> <span id = "tuition-value"> [display choice] </span> </label>
+					<div class = "dropdown-content">
+
+						<!-- TO-DO: slider for tuition fees -->
+						<div id="tuition-slider">
+							<p> $1,800 </p>
+						 	<input type="range" min="0" max="1800" value="2400" class="slider" id="tuitionSlider" name = "tuition-slider">
+						 	<p> $2,400 </p>
+						 	<label for = "tuition-slider" style = "width: 100%;
+		    text-align: center;"> <span id = "tuition-value"> [display choice] </span> </label>
+						</div>
 					</div>
 
 				</div>
