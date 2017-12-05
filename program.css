@@ -1,0 +1,355 @@
+nav{
+    width: inherit;
+    background: #DCE4DD;
+    padding: 9px;
+}
+
+
+nav a {
+        color:white;
+    font-size: 10;
+margin-right: 15px;
+    font-weight: 10;
+        text-decoration: none;
+
+    
+    /* works copy: */
+font-family: Arial;
+}
+.navul1{
+    margin-left: 15px;
+}
+
+.linkedin{
+ position:absolute;
+    right:15px; 
+    font-size: 13px;
+}
+
+.navcenter{
+/* NIKA LOHRASBI AZAR Copy: */
+font-family: Arial-BoldMT;
+font-size: 0.2em;
+color: #fff;
+    text-align: center;
+margin-left: 30%;
+}
+
+.resume{
+ position:absolute;
+    right:95px; 
+        font-size: 13px;
+
+}
+.circle {
+  width: 10px;
+	height: 10px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    background: white;
+}
+.intro{
+    /* thinker, designer, d: */
+font-family: SavoyeLetPlain;
+font-size: 20px;
+color: #000000;
+line-height: 14px;
+        text-align: center;
+}
+
+.about{
+/* Design is invisible.: */
+font-size: 12px;
+color: #000000;
+letter-spacing: 0px;
+    text-align: center;
+}
+body{
+     margin: 0px;
+}
+.main{
+    /*background: #000;*/
+    display: block;
+    padding-bottom: 50px;
+    padding:10px; 
+    margin-top:10px; 
+    margin-left: 50px;
+    margin-right: 50px;
+    height:auto; 
+    width: 60%;
+    max-width: 60%;
+}
+.fullwidth{
+display: block;
+   width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.progtitle{
+   position:absolute;
+    top:283px; 
+    left: 62px;
+        font-size: 28px; 
+    color:white;
+    font-weight: 500;
+}
+
+.progsubtitle{
+  position:absolute;
+    top:338px; 
+    left: 64px;
+        font-size: 15px; 
+    color:white;
+    font-weight: 500;
+}
+
+
+/**BREAD CRUMBS**/
+
+
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	color: #448483;
+	word-wrap: break-word;
+}
+
+ul {
+	list-style: none;
+}
+
+.center {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+/* Basic breadcrumb design */
+
+
+.breadcrumb-holder {
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+}
+
+.breadcrumb-holder ul {
+  display: flex;
+}
+
+.breadcrumb-holder li:last-of-type a {
+  cursor: text;
+}
+
+.breadcrumb-holder li a, .breadcrumb-holder li a:link, .breadcrumb-holder li a:visited {
+  text-decoration: none;
+  display: block;
+}
+
+
+
+
+
+
+.basic-breadcrumbs li {
+  margin: 0 8px 0 0;
+}
+
+.basic-breadcrumbs li a, .basic-breadcrumbs li a:link, .basic-breadcrumbs li a:visited {
+  padding: 5px 8px;
+  color: #448483;
+  position: relative;
+}
+
+.basic-breadcrumbs li a:before {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-right: none;
+  border-left: 5px solid #448483;
+  top: 50%;
+  right: -5px;
+  transform: translate(0, -50%);
+}
+
+.basic-breadcrumbs li:last-of-type a {
+  color: #448483;
+}
+
+.basic-breadcrumbs li:last-of-type a:before {
+  display: none;
+}
+
+/***bread crumbs***/
+
+
+
+
+/***RIGHT MENU***/
+
+.menuright {
+    display: block;
+    position:fixed;
+    width: 220px;
+    padding: 15px 10px;
+    top:500px;
+    right: 30px;
+    height: auto;
+    max-height: 95%;
+}
+
+.menuright a {
+    font-family: helvetica;
+    font-size: 11px;
+    color:dimgray;
+    padding: 2px; 4px;
+    display: block;
+    text-decoration: none;
+    margin-top:10px;
+    text-align: left;
+}
+
+.menuright a:hover,
+.menuright a.active {
+    font-weight: 900;
+    color: #448483;
+    text-decoration: underline;
+    text-decoration: overline;
+}
+
+/***add button***/
+
+.transition, .btn {
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+.section {
+  text-align: center;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 1em;
+  padding: 1.5em 3.5em;
+  border: 0;
+  border-radius: 7px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9px;
+    margin-top: 1.5em;
+    margin-left: 0px;
+}
+.btn:hover {
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+}
+.btn:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
+}
+.btn:focus {
+  outline: none;
+}
+.btn--basic {
+  background-color: #F3F8F8;
+  color: #448483;
+}
+
+/***body items***/
+h1{
+    text-transform: uppercase;
+    color: #448483;
+    font-size: 13px;
+    padding-left: 9px;
+}
+
+.bodyparagraph{
+    color: #757575;
+    font-size: 13px;
+    padding-left: 9px;
+    padding-top: 10px;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.bodybox{
+  display: block;
+  margin: 1em;
+  padding: 1.5em;
+  border: 0;
+  border-radius: 7px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  margin-top: 1.5em;
+  margin-left: 0px;
+  background-color: #F3F8F8;
+  margin-left: 9px;
+  color: #448483;
+  line-height: 1.5rem;
+    font-weight: 400;
+
+}
+
+
+
+/******TABS******/
+
+/* Style the tab */
+div.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: #F3F8F8;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+
+
+
+
