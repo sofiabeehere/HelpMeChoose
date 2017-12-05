@@ -1,0 +1,94 @@
+/* Typography Style */
+
+/* Proxima Nova Variants*/
+
+/* Black */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 1000;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Black.otf');
+ 
+}
+
+/* Extra Bold */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 900;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Extrabld.otf');
+ 
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 800;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Bold.otf');
+ 
+}
+
+/* Semibold */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Semibold.otf');
+ 
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Medium.otf');
+ 
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Regular.otf');
+ 
+}
+
+/* Light */
+/*@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Light.otf');
+ 
+}*/
+
+/* Thin */
+/*@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Thin.otf');
+ 
+}*/
+
+/* General Styling */
+
+html { 
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: Proxima Nova;
+    font-weight: 900;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #383838;
+    margin: 0.5em;
+}
