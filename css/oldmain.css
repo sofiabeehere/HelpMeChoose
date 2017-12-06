@@ -140,15 +140,14 @@ header .site-search-bar input::placeholder {
 	padding: 0 1em;
 }
 
-.parallax-banner {
-    background-image: url(../img/banner.png);
+.banner {
     width: 100%;
     min-height: 100%;
-    background-attachment: fixed;
+/*    background-attachment: fixed;
     background-position: 52% 2%;
     background-repeat: no-repeat;
     background-size: 270%;
-    position: absolute;
+    position: absolute;*/
 }
 
 .main {

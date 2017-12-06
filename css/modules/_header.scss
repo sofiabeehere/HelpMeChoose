@@ -7,15 +7,17 @@ header {
     background-color: #DBE3DC;
     width: 100%;
     padding: 1em;
+    min-height: 60px;
    // margin: 0;
 
     a {
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding-left: 2em;
+        padding-left: 2.5em;
         color: $blue;
         transition: color 0.5s;
+        vertical-align: middle;
     }
 
     a:hover {
@@ -59,4 +61,16 @@ header {
 			padding: 0 1em;
     	}
     }
+}
+
+.banner {
+    background: transparent!important;
+    width: 100%;
+    min-height: 10em;
+    height: 60vh; 
+/*    background-attachment: fixed;
+    background-position: 52% 2%;
+    background-repeat: no-repeat;
+    background-size: 270%;
+    position: absolute;*/
 }
