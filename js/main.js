@@ -35,7 +35,7 @@ $(window).scroll(function() {
 	if (windscroll >= 100) {
 		$('.progress-sidebar').addClass('fixed');
 		$('.main-program-content section').each(function(i) {
-		    if ($(this).position().top <= windscroll - 20) {
+		    if ($(this).position().top <= windscroll - 400) {
 		        $('.progress-sidebar a.active').removeClass('active');
 		        $('.progress-sidebar a').eq(i).addClass('active');
 		    }

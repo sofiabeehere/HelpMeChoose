@@ -165,4 +165,19 @@
 	position:sticky;
 	position: -webkit-sticky;
 	top: 6em;
+
+	a {
+	    font: $font;
+	    color: black;
+	    padding: 2px 4px;
+	    display: block;
+	    text-decoration: none;
+	}
+
+	a:hover,
+	a.active {
+	    background: white;
+	    color: green;
+	}
+
 }
