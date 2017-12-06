@@ -1,0 +1,232 @@
+/* Typography Style */
+
+/* Proxima Nova Variants*/
+
+/* Black */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 1000;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Black.otf');
+ 
+}
+
+/* Extra Bold */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 900;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Extrabld.otf');
+ 
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 800;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Bold.otf');
+ 
+}
+
+/* Semibold */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Semibold.otf');
+ 
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Medium.otf');
+ 
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fonts/ProximaNova-Regular.otf');
+ 
+}
+
+/* General Styling */
+
+html { 
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    margin: 60px 0 0 0;
+    font-size: 14px;
+}
+
+.home-title {
+    font-family: Proxima Nova;
+    font-weight: 800;
+    font-size: 30px;
+    color: #383838;
+    text-align: center;
+    display: block;
+    margin: 15px 0 15px 0;
+
+    .help {
+        background: none;
+        color: red;
+        padding: 0;
+        display: inline;
+    }
+    .me {
+        background: none;
+        color: yellow;
+        padding: 0;
+        display: inline;
+    }
+    .choose {
+        background: none;
+        color: $blue;
+        padding: 0;
+        display: inline;
+    }
+}
+
+h1 {
+    font-family: Proxima Nova;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #383838;
+    margin: 0.5em;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.home-title {
+    font-family: Proxima Nova;
+    font-weight: 800;
+    font-size: 30px;
+    color: #383838;
+    text-align: center;
+    display: block;
+    margin: 15px 0 15px 0;
+
+    .help {
+        background: none;
+        color: $logoRed;
+        padding: 0;
+        display: inline;
+    }
+    .me {
+        background: none;
+        color: $logoYellow;
+        padding: 0;
+        display: inline;
+    }
+    .choose {
+        background: none;
+        color: $logoBlue;
+        padding: 0;
+        display: inline;
+    }
+
+}
+
+h2 {
+    font-family: Proxima Nova;
+    font-weight: 700;
+    font-size: 26px;
+    color: $red;
+    margin: 1.5em 1em 1em 1em;
+    text-transform: uppercase!important;
+}
+
+p {
+    color: #555555;
+    margin: 0 0 1em 0;
+}
+
+.about-heading {
+    text-align: center;
+}
+
+.main {
+    position: relative;
+    background-color: white;
+}
+
+// Program Details Page
+
+.tinted-overlay {
+    background: rgba(72, 179, 197, 0.5);
+}
+
+.program-heading {
+    margin: 0 706px 0 58px;
+    top: -100px;
+    position: relative;
+
+    h2 {
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+    h3 {
+        font-family: $font;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: white;
+        padding-top: 8px;
+    }
+
+}
+
+.main-program-content {
+    top: 240px;
+}
+
+.featured {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    display: inline-block;
+}
+
+.browse-btn {
+    font: Proxima Nova;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    font-size: 12px;
+    width: 180px;
+    height: 45px;
+    color: #176767;
+    background-color: $medBlue;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
+
+.browse-btn:hover {
+    color: white;
+    background-color: $blue;
+}
+
+p {
+    margin: 0 0 3em 0;
+}
+
+.home-heading {
+    text-align: center;
+}
