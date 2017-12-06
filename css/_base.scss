@@ -190,8 +190,54 @@ p {
 
 }
 
+// Program Details Page
+
 .main-program-content {
     top: 240px;
+
+    h4 {
+        font: $font;
+        font-weight: 700;
+        font-size: 16px;
+        color: $darkBlue;
+        letter-spacing: 0.0512em;
+    }
+
+    p {
+        font: $font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+        letter-spacing: 0.0512em;
+    }
+
+    #program-info {
+
+        table {
+            background-color: $iceBlue;
+            border-radius: 10px;
+            padding-top: 1em;
+        }
+
+        th, td {
+            font: $font;
+            color: $darkBlue;
+            padding: 1em;
+            text-align: left;
+        }
+
+        th {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        td {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
 }
 
 .featured {
@@ -230,3 +276,4 @@ p {
 .home-heading {
     text-align: center;
 }
+>>>>>>> 851d6d0d6661407c199e64bb75fabd3b9378815b
