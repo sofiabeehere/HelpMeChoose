@@ -144,7 +144,7 @@ h2 {
     font-weight: 700;
     font-size: 26px;
     color: $red;
-    margin: 1.5em 1em 1em 1em;
+    margin: 1.5em 1em 1em 0.5em;
     text-transform: uppercase!important;
 }
 
@@ -194,6 +194,7 @@ p {
 
 .main-program-content {
     top: 240px;
+    padding-bottom: 5em;
 
     h4 {
         font: $font;
@@ -201,6 +202,7 @@ p {
         font-size: 16px;
         color: $darkBlue;
         letter-spacing: 0.0512em;
+        padding: 0.5em 0 1em 0;
     }
 
     p {
@@ -210,21 +212,25 @@ p {
         line-height: 22px;
         text-align: left;
         letter-spacing: 0.0512em;
+        margin: 0;
     }
 
     #program-info {
 
+        padding: 1em 0;
+
         table {
             background-color: $iceBlue;
             border-radius: 10px;
-            padding-top: 1em;
+            padding: 2em;
         }
 
         th, td {
             font: $font;
             color: $darkBlue;
-            padding: 1em;
+            padding: 1em 1em 0 1em;
             text-align: left;
+            margin: 0;
         }
 
         th {
@@ -236,7 +242,190 @@ p {
             font-weight: 400;
             font-size: 16px;
         }
+
+        tr:nth-child(4) td, tr:nth-child(4) th {
+            padding: 1em 1em 1em 1em;
+        }
     }
+
+    #project-examples {
+
+        .project-card {
+
+            figcaption {
+                display: block;
+                float: left;
+                position: absolute;
+                top: 0;
+                background-color: rgba(72, 179, 197, 0.8);
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+
+            figcaption div {
+                text-align: center;
+                top: 32%;
+                position: relative;
+                letter-spacing: 0.0512em;
+            }
+
+            figcaption div h4 {
+                text-align: center;
+                color: white;
+                letter-spacing: 0.0512em;
+            }
+
+            figure {
+                position: relative;
+                float: left;
+            }   
+
+            figure img {
+                border-radius: 8px;
+            }
+        }
+
+        }
+
+        #program-reqs {
+
+        // requirements tabs
+
+            /* Style the tab */
+            div.tab {
+                float: left;
+                /*border: 1px solid #ccc;*/
+                background-color: transparent;
+                width: 30%;
+                height: 238px;
+            }
+
+            /* Style the buttons inside the tab */
+            div.tab button {
+                font-family: Proxima Nova;
+                font-weight: 600;
+                font-size: 14px;
+                display: block;
+                background-color: #F6F6F6;
+                color: #337979;
+                padding: 14px 16px;
+                width: 100%;
+                outline: none;
+                text-align: left;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 17px;
+                border: none;
+            }
+
+            /* Change background color of buttons on hover */
+            div.tab button:hover {
+                background-color: #ddd;
+            }
+
+            /* Create an active/current "tab button" class */
+            div.tab button.active {
+                background-color: #EDF5F5;
+            }
+
+            /* Style the tab content */
+            .tabcontent, .reqtabcontent {
+                flex-flow: row;
+                justify-content: space-evenly;
+                float: left;
+                padding: 0px 12px;
+                /*border: 1px solid #ccc;*/
+                background-color: #EDF5F5;
+                width: 70%;
+                border-left: none;
+                height: 215px;
+                border-radius: 0 10px 10px 0;
+            }
+
+            .reqtabcontent {
+                flex-flow: column;
+                justify-content: inherit;
+            }
+
+            .tabcontent h5, .reqtabcontent h5{
+                font-family: Proxima Nova;
+                font-weight: 700;
+                font-size: 13px;
+                color: #337979;
+                padding: 2em;
+            }
+
+            .tabcontent ul, .reqtabcontent ul{
+                list-style: none;
+            }
+
+            .tabcontent ul li, .reqtabcontent ul li{
+                font-family: Proxima Nova;
+                font-weight: 500;
+                font-size: 12px;
+                padding-bottom: 1em;
+                color: #337979;
+            }
+
+            .reqtabcontent ul li h5{
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+            }
+
+            .reqtabcontent ul li{
+                padding-bottom: 2em;
+            }
+
+            .reqtabcontent ul {
+                padding: 2em;
+                margin: 0;
+            }
+        }
+
+        #career-options {
+            
+            ul {
+                list-style: none;
+            }
+
+            ul li {
+                font: $font;
+                font-weight: 400;
+                font-size: 14px;
+                color: black;
+                padding-bottom: 1em;
+                letter-spacing: 0.0512em;
+            }
+
+            ul li::before {
+                content: "• ";
+                color: $darkBlue;
+            }
+
+
+        }     
+
+        #rel-programs {
+
+            p {
+                margin-top: 0;
+            }
+        }
+
+        .browse-more {
+            font-family: Proxima Nova;
+            font-weight: 700;
+            font-size: 14px;
+            color: #176767;
+            border-radius: 8px;
+            background-color: #F2F7F7;
+            padding: 1.5em;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+        }
 
 }
 
