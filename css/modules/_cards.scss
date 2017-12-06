@@ -1,0 +1,50 @@
+.card {
+
+	width: 207px;	
+	margin: 0 1.5em 1.5em 0;
+	border: none;
+	border-radius: 8px;
+	background-color: $lightBlue;
+
+	figure {
+		margin: 0;
+	}
+
+	img {
+		border-radius: 8px 8px 0 0;
+	}
+
+	figcaption {
+		font: $font;
+		margin: 1em;
+		color: $blue;
+
+		h4 {
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 15px;
+			margin: 0;
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 10px;
+			line-height: 14px;
+			margin: 1em 0;
+		}
+	}
+
+	.compare-btn {
+		font: Proxima Nova;
+		font-weight: 600;
+		font-size: 9px;
+		width: 105px;
+		height: 22px;
+		color: #176767;
+		background-color: $medBlue;
+		border-radius: 4px;
+		border: none;
+	}
+
+
+}
