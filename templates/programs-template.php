@@ -272,6 +272,14 @@
 
 	<nav class = "progress-sidebar">
 
+		<a href="#" data-scroll="program-desc">PROGRAM DESCRIPTION</a>
+
+		<a href="#" data-scroll="program-info">PROGRAM INFORMATION</a>
+		    
+		<a href="#" data-scroll="project-examples">PROJECT EXAMPLES</a>
+		    
+		<a href="#" data-scroll="project-reqs">PROGRAM REQUIREMENTS</a>
+
 	</nav>
 
 	<script src = "../js/tabs.js"></script>

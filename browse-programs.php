@@ -12,16 +12,17 @@
 </head>
 <body>
 
-	<header>  
+	<!-- <header>  
 		<img src = "img/logo.svg">
 		<div class = "site-search-bar">
 			<input type = "text" name = "site-search-bar" placeholder = "Search entire site">
 			<img src = "img/search.png">
 		</div>
 		<img src = "img/profile-icon.png" class = "profile-btn">
-	</header>
+	</header> -->
 
-	<div class = "parallax-banner">
+	 <div class="banner parallax-window" data-img-src="img/banner.png" data-parallax="scroll" data-position-x="-1805px">
+        </div>
 
 	<div class = "main">
 
