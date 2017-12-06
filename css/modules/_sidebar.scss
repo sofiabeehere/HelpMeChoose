@@ -33,6 +33,9 @@
 	margin: 0 2em 0.5em 0;
 	background-color: $gray;
 	border-radius: 8px;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 6em;
 
 	h3 {
 		font: $font;
@@ -97,7 +100,7 @@
 		border: 0.5px solid #ccc;
 		background: white;
 	}
-	
+
 	/* checked mark aspect */
 	[type="checkbox"]:not(:checked) + label:after,
 	[type="checkbox"]:checked + label:after {
@@ -121,12 +124,36 @@
 		transform: scale(1);
 	}
 
-	#tuition-slider p, #tuition-slider label {
-		font-family: $font;
-		font-weight: 500;
-		font-size: 10px;
-		line-height: 15px;
-		color: #5F5F5F;
+	#tuition-slider {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-top: 1em;
+		justify-content: space-between;
+	}
+
+	#tuition-slider {
+	
+		input {
+			width: 58%;
+		}
+
+		p, label {
+			font-family: $font;
+			font-weight: 500;
+			font-size: 11px;
+			line-height: 15px;
+			color: #5F5F5F;
+		}
+
+		label {
+			padding-bottom: 1em;
+		}
+
+		p {
+			padding-top: 1em;
+		}
+
 	}
 }
 

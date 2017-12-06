@@ -40,7 +40,7 @@
             <div class = "row">
                 <div class = "col-3">
 
-                    <form class = "content" id = "filter-programs" id = "filter-programs">
+                    <form class = "content" id = "filter-programs" data-toggle="affix">
             
             <h3> SEARCH FOR </h3>
 
@@ -48,11 +48,7 @@
                         <input type="text" id="site-search-bar" placeholder="Search entire site">
                         <a href=""><img src="img/search.png"></a>
                     </div>
-
-                   <!--  <input type = "text" id = "search_bar" placeholder = "programs / school">
-
-                    <img src = "img/search.png" width = "30"> -->
-
+                    
             <h3> FILTER </h3>
 
             <div class = "filter-dropdowns-container">
@@ -161,7 +157,7 @@
 
                 <div class = "filter-dropdown">
                 
-                    <button type = "button" onclick = "toggleDropdown(this)" class = "dropdown-btn"> 
+                    <button type = "button" onclick = "toggleDropdown(this);" class = "dropdown-btn"> 
 
                         FIELD OF STUDY
 
@@ -402,6 +398,15 @@
         <script src="lib/jquery-ui/jquery-ui.min.js"></script>
         <script src="/lib/parallax/parallax.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+
+        function toggleDropdown(t) {
+         $(t).siblings(".dropdown-content").toggle();
+        $(t).children(".dropdown-arrow").toggleClass('rotate');
+        $(t).toggleClass('hide-border');
+    }
+
+        </script>
         <!-- Testing -->
 
     </body>
