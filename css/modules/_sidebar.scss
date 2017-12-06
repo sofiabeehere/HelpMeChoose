@@ -160,3 +160,9 @@
 .rotate {
 	transform: rotate(180deg);
 }
+
+.progress-sidebar {
+	position:sticky;
+	position: -webkit-sticky;
+	top: 6em;
+}

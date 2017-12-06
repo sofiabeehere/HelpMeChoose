@@ -87,13 +87,15 @@
                             </table>
                          </section>
 
-                         <section id="project-examples" data-anchor="project-examples" style = "padding-top: 15em;">
+                         <section id="project-examples" data-anchor="project-examples">
                             <h4> PROJECT EXAMPLES </h4>
 
-                            <section class = "content" id = "search-results">
+                            <div class = "row">
+
+                                <div class = "col-4">
                             <div class = "project-card">
                                 <figure>
-                                    <img src = "http://via.placeholder.com/207x195">
+                                    <img src = "http://via.placeholder.com/260x250">
                                     <figcaption>
                                         <div>
                                         <h4> [COURSE CODE] </h4>
@@ -101,11 +103,13 @@
                                         </div>
                                     </figcaption>
                                 </figure>
+                            </div>
                             </div>
 
+                            <div class = "col-4">
                             <div class = "project-card">
                                 <figure>
-                                    <img src = "http://via.placeholder.com/207x195">
+                                    <img src = "http://via.placeholder.com/260x250">
                                     <figcaption>
                                         <div>
                                         <h4> [COURSE CODE] </h4>
@@ -113,11 +117,13 @@
                                         </div>
                                     </figcaption>
                                 </figure>
+                            </div>
                             </div>
 
+                            <div class = "col-4">
                             <div class = "project-card">
                                 <figure>
-                                    <img src = "http://via.placeholder.com/207x195">
+                                    <img src = "http://via.placeholder.com/260x250">
                                     <figcaption>
                                         <div>
                                         <h4> [COURSE CODE] </h4>
@@ -126,17 +132,25 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                            </section>
+                            </div>
+
+                            </div>
+
+                            <!-- </section> -->
 
                             <section id="program-reqs" data-anchor="program-reqs">
             <h4> PROGRAM REQUIREMENTS </h4>
 
+            <div class = "row">
+
+            <div class = "col-sm-12">
+
             <div class = "tab-container">
                 <div class="tab">
-                    <button class="reqtablinks" style = "border-bottom: solid 0.5px #A1D3CC; border-top-left-radius: 10px;" onclick="openReq(event, 'Grade-12')" id="defaultReqOpen">GRADE 12</button>
-                    <button class="reqtablinks" style = "border-bottom: solid 0.5px #A1D3CC;" onclick="openReq(event, 'Grade-11')">GRADE 11</button>
-                    <button class="reqtablinks" style = "border-bottom: solid 0.5px #A1D3CC;" onclick="openReq(event, 'General')">GENERAL</button>
-                    <button class="reqtablinks" style = "border-bottom-left-radius: 10px;" onclick="openReq(event, 'English')">ENGLISH</button>
+                    <button class="reqtablinks" style = "border-bottom: solid 0.5px #A1D3CC; border-top-left-radius: 10px;" onclick="javascript: openReq(event, 'Grade-12')" id="defaultReqOpen">GRADE 12</button>
+                    <button class="reqtablinks" style = "border-bottom: solid 0.5px #A1D3CC;" onclick="javascript: openReq(event, 'Grade-11')">GRADE 11</button>
+                    <button class="reqtablinks" style = "border-bottom: solid 0.5px #A1D3CC;" onclick="javascript: openReq(event, 'General')">GENERAL</button>
+                    <button class="reqtablinks" style = "border-bottom-left-radius: 10px;" onclick="javascript: openReq(event, 'English')">ENGLISH</button>
                 </div>
 
                 <div id="Grade-12" class="reqtabcontent">
@@ -161,13 +175,16 @@
                 </div>
             </div>
 
+            </div>
+            </div>
+
         </section>
 
-        <section id="career-options" data-anchor="career-options" style = "padding-top: 15em;">
+        <section id="career-options" data-anchor="career-options">
             <h4> CAREER OPTIONS </h4>
 
-            <div class = "careers-container">
-                <div>
+            <div class = "row">
+                <div class = "col-4">
                 <ul>
                     <li> Environmental managers </li>
                     <li> Conservation officers </li>
@@ -175,7 +192,7 @@
                     <li> Environmental planners </li>
                 </ul>
                 </div>
-                <div>
+                <div class = "col-8">
                 <ul>
                     <li> GIS specialists </li>
                     <li> Restoration ecology professionals </li>
@@ -187,41 +204,49 @@
 
         </section>
 
-        <section id="rel-programs" data-anchor="rel-programs" style = "padding-top: 9em;">
+        <section id="rel-programs" data-anchor="rel-programs">
             <h4> RELATED PROGRAMS </h4>
 
             <section class = "content" id = "search-results">
-            <div class = "card">
-                <figure>
-                    <img src = "http://via.placeholder.com/207x195">
-                    <figcaption>
-                        <h4> [PROGRAM TITLE] </h4>
-                        <p> [SCHOOL NAME] </p>
-                        <button type = "button" class = "compare-btn"> ADD TO COMPARE </button>
-                    </figcaption>
-                </figure>
-            </div>
+            <div class = "row">
+                <div class = "col-4">
+                <div class = "card">
+                    <figure>
+                        <img src = "http://via.placeholder.com/207x195">
+                        <figcaption>
+                            <h4> [PROGRAM TITLE] </h4>
+                            <p> [SCHOOL NAME] </p>
+                            <button type = "button" class = "compare-btn"> ADD TO COMPARE </button>
+                        </figcaption>
+                    </figure>
+                </div>
+                </div>
+                
+                <div class = "col-4">
+                <div class = "card">
+                    <figure>
+                        <img src = "http://via.placeholder.com/207x195">
+                        <figcaption>
+                            <h4> [PROGRAM TITLE] </h4>
+                            <p> [SCHOOL NAME] </p>
+                            <button type = "button" class = "compare-btn"> ADD TO COMPARE </button>
+                        </figcaption>
+                    </figure>
+                </div>
+                </div>
 
-            <div class = "card">
-                <figure>
-                    <img src = "http://via.placeholder.com/207x195">
-                    <figcaption>
-                        <h4> [PROGRAM TITLE] </h4>
-                        <p> [SCHOOL NAME] </p>
-                        <button type = "button" class = "compare-btn"> ADD TO COMPARE </button>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class = "card">
-                <figure>
-                    <img src = "http://via.placeholder.com/207x195">
-                    <figcaption>
-                        <h4> [PROGRAM TITLE] </h4>
-                        <p> [SCHOOL NAME] </p>
-                        <button type = "button" class = "compare-btn"> ADD TO COMPARE </button>
-                    </figcaption>
-                </figure>
+                <div class = "col-4">
+                <div class = "card">
+                    <figure>
+                        <img src = "http://via.placeholder.com/207x195">
+                        <figcaption>
+                            <h4> [PROGRAM TITLE] </h4>
+                            <p> [SCHOOL NAME] </p>
+                            <button type = "button" class = "compare-btn"> ADD TO COMPARE </button>
+                        </figcaption>
+                    </figure>
+                </div>
+                </div>
             </div>
             </section>
 
@@ -233,14 +258,27 @@
 
                     </div>
                     <div class = "col-3">
+                        <nav class = "progress-sidebar">
 
+                            <ul>
 
+                            <li><a href="#" data-scroll="program-desc">PROGRAM DESCRIPTION</a></li>
+
+                            <li><a href="#" data-scroll="program-info">PROGRAM INFORMATION</a></li>
+                                
+                            <li><a href="#" data-scroll="project-examples">PROJECT EXAMPLES</a></li>
+                                
+                            <li><a href="#" data-scroll="program-reqs">PROGRAM REQUIREMENTS</a></li>
+
+                            <li><a href="#" data-scroll="career-options">CAREER OPTIONS</a></li>
+
+                            <li><a href="#" data-scroll="rel-programs">RELATED PROGRAMS</a></li>
+
+                            </ul>
+
+                        </nav>
                     </div>
-                </div>
-            </div>
 
-
-        </div>
 
         <!-- JS -->
         <script src="lib/jquery-ui/external/jquery/jquery.js"></script>
@@ -249,10 +287,9 @@
         <script src="lib/jquery-ui/jquery-ui.min.js"></script>
         <script src="/lib/parallax/parallax.min.js"></script>
         <script src="js/main.js"></script>
-        <!-- <script src="tabs.js"></script> -->
+        <script src="js/tabs.js"></script>
 
         <!-- Testing -->
-        <!-- <h1>Testing</h1> -->
 
     </body>
 </html>
