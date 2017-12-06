@@ -20,7 +20,7 @@ function openCity(evt, cityName) {
 }
 
 
-////////////left menu coloring///////////
+//////////////////left menu coloring////////////////
 
 
 jQuery(window).scroll(function() {
