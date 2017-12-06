@@ -68,7 +68,7 @@
                     
                     <div class = "dropdown-content">
                         <ul class = "checkbox-values">
-                            <li><input type = "checkbox" id = "credential_certificate">
+                            <li><input type = "checkbox" id = "credential_certificate" data-filter=".degree">
                             <label for = "credential_certificate"> Certificate </label></li>
                             <li><input type = "checkbox" id = "credential_degree">
                             <label for = "credential_degree"> Degree </label></li>
@@ -93,7 +93,7 @@
                     
                     <div class = "dropdown-content">
                         <ul class = "checkbox-values">
-                            <li><input type = "checkbox" id = "location_burnaby">
+                            <li><input type = "checkbox" id = "location_burnaby" data-filter=".burnaby">
                             <label for = "location_burnaby"> Burnaby </label></li>
                             <li><input type = "checkbox" id = "location_okanagan">
                             <label for = "location_okanagan"> Okanagan </label></li>
@@ -214,7 +214,10 @@
 
                 </div>
                 <div class = "col-3">
-                    <div class = "card">
+                
+                <div class = "programs-grid">
+
+                    <div class = "card degree ">
                 <figure>
                     <img src = "img/programs/1.jpg">
                     <figcaption>
@@ -225,7 +228,7 @@
                 </figure>
             </div>
 
-            <div class = "card">
+            <div class = "card burnaby">
                 <figure>
                     <img src = "img/programs/4.jpg">
                     <figcaption>
@@ -389,6 +392,8 @@ COMPUTER IT
                 </figure>
             </div>
 
+            </div>
+
                 </div>
             </div>
         </div>
@@ -402,6 +407,7 @@ COMPUTER IT
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="lib/jquery-ui/jquery-ui.min.js"></script>
         <script src="/lib/parallax/parallax.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
         <script src="js/main.js"></script>
         <script>
 

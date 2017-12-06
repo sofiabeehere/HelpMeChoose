@@ -14,6 +14,22 @@ $(function() {
     }
 });
 
+// Filtering Sidebar for browse.html
+
+var $grid = $('.programs-grid').isotope({
+  // options
+  itemSelector: '.card',
+  layoutMode: 'fitRows'
+});
+
+$(".checkbox-values").on("click", "input", function() {
+	console.log("clicked");
+    var o = $(this).attr("data-filter");
+    $grid.isotope({
+        filter: o
+    })
+});
+
 // Reading progress indicator for details.html
 
 $('.progress-sidebar a').on('click', function() {
