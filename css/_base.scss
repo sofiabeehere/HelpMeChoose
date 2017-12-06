@@ -85,6 +85,35 @@ body {
     position: relative;
 }
 
+.home-title {
+    font-family: Proxima Nova;
+    font-weight: 800;
+    font-size: 30px;
+    color: #383838;
+    text-align: center;
+    display: block;
+    margin: 15px 0 15px 0;
+
+    .help {
+        background: none;
+        color: red;
+        padding: 0;
+        display: inline;
+    }
+    .me {
+        background: none;
+        color: yellow;
+        padding: 0;
+        display: inline;
+    }
+    .choose {
+        background: none;
+        color: $blue;
+        padding: 0;
+        display: inline;
+    }
+}
+
 h1 {
     font-family: Proxima Nova;
     font-weight: 900;
@@ -100,10 +129,46 @@ h2 {
     font-size: 26px;
     color: $red;
     padding: 1em;
+    text-transform: uppercase!important;
+}
+
+p {
+    color: #555555;
+    margin: 0 0 1em 0;
+}
+
+.about-heading {
+    text-align: center;
 }
 
 .main {
     position: relative;
     background-color: white;
     top: 240px;
+}
+
+.featured {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    display: inline-block;
+}
+
+.browse-btn {
+    font: Proxima Nova;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    font-size: 12px;
+    width: 180px;
+    height: 45px;
+    color: #176767;
+    background-color: $medBlue;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.browse-btn:hover {
+    color: red;
 }
