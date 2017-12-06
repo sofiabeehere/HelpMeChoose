@@ -81,17 +81,54 @@ html {
 }
 
 body {
+<<<<<<< HEAD
     margin: 0;
     position: relative;
+=======
+    margin: 60px 0 0 0;
+    font-size: 14px;
+>>>>>>> b2e7e2e92b64ac446b5ac731deca0574e4e7e593
 }
 
 h1 {
     font-family: Proxima Nova;
-    font-weight: 900;
-    font-size: 26px;
+    font-weight: 700;
+    font-size: 24px;
     text-transform: uppercase;
     color: #383838;
     margin: 0.5em;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.home-title {
+    font-family: Proxima Nova;
+    font-weight: 800;
+    font-size: 30px;
+    color: #383838;
+    text-align: center;
+    display: block;
+    margin: 15px 0 15px 0;
+
+    .help {
+        background: none;
+        color: red;
+        padding: 0;
+        display: inline;
+    }
+    .me {
+        background: none;
+        color: yellow;
+        padding: 0;
+        display: inline;
+    }
+    .choose {
+        background: none;
+        color: $blue;
+        padding: 0;
+        display: inline;
+    }
+
 }
 
 h2 {
