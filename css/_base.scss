@@ -56,24 +56,6 @@
  
 }
 
-/* Light */
-/*@font-face {
-    font-family: 'Proxima Nova';
-    font-weight: 400;
-    font-style: normal;
-    src: url('fonts/ProximaNova-Light.otf');
- 
-}*/
-
-/* Thin */
-/*@font-face {
-    font-family: 'Proxima Nova';
-    font-weight: 300;
-    font-style: normal;
-    src: url('fonts/ProximaNova-Thin.otf');
- 
-}*/
-
 /* General Styling */
 
 html { 
@@ -138,19 +120,19 @@ h1 {
 
     .help {
         background: none;
-        color: red;
+        color: $logoRed;
         padding: 0;
         display: inline;
     }
     .me {
         background: none;
-        color: yellow;
+        color: $logoYellow;
         padding: 0;
         display: inline;
     }
     .choose {
         background: none;
-        color: $blue;
+        color: $logoBlue;
         padding: 0;
         display: inline;
     }
@@ -162,7 +144,7 @@ h2 {
     font-weight: 700;
     font-size: 26px;
     color: $red;
-    padding: 1em;
+    margin: 1.5em 1em 1em 1em;
     text-transform: uppercase!important;
 }
 
@@ -232,8 +214,19 @@ p {
     border: none;
     display: block;
     margin: 0 auto;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
 }
 
 .browse-btn:hover {
-    color: red;
+    color: white;
+    background-color: $blue;
+}
+
+p {
+    margin: 0 0 3em 0;
+}
+
+.home-heading {
+    text-align: center;
 }

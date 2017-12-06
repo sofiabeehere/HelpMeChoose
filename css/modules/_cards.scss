@@ -1,6 +1,6 @@
 .card {
 
-	width: 260px;	
+	width: 100%;	
 	margin: 0 1.5em 1.5em 0;
 	border: none;
 	border-radius: 8px;
@@ -8,10 +8,12 @@
 
 	figure {
 		margin: 0;
+		width: 100%;
 	}
 
 	img {
 		border-radius: 8px 8px 0 0;
+		width: 100%;
 	}
 
 	figcaption {
