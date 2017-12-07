@@ -8,7 +8,6 @@ $(function() {
         $(t).toggleClass('hide-border');
     }
 
-<<<<<<< HEAD
 // Filtering Sidebar for browse.html
 
 var $grid = $('.programs-grid').isotope({
@@ -22,7 +21,6 @@ $(".checkbox-values").on("click", "input", function() {
     var o = $(this).attr("data-filter");
     $grid.isotope({
         filter: o
-=======
     // Filtering Sidebar for browse.html
     var $grid = $('.programs-grid').isotope({
         // options
@@ -65,7 +63,6 @@ $(".checkbox-values").on("click", "input", function() {
             scrollTop: scrollPoint
         }, 500);
         return false;
->>>>>>> 6bbe61399f7e9d8d07f5da6f283b27758b1257e7
     })
 
     $(window).scroll(function() {
