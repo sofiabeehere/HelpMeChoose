@@ -206,6 +206,11 @@ p {
         color: $darkBlue;
     }
 
+    .breadcrumbs a:hover {
+        text-decoration: none;
+        color: #70a1a1;
+    }
+
     h4 {
         font: $font;
         font-weight: 700;

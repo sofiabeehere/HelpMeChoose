@@ -50,4 +50,8 @@
 		border-radius: 4px;
 		border: none;
 	}
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
 }
