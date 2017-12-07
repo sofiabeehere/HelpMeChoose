@@ -51,7 +51,12 @@
 		border: none;
 	}
 
-        &:nth-child(3n) {
+}
+
+#rel-programs .card {
+
+    &:nth-child(3n) {
             margin-right: 0;
         }
+        
 }

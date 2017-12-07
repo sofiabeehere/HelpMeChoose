@@ -190,7 +190,7 @@ p {
 
 }
 
-// Program Details Page
+// Program and Project Details Page (Shares same styling)
 
 .main-program-content {
     top: 200px;
@@ -232,7 +232,7 @@ p {
         padding-bottom: 1em;
     }
 
-    #program-desc {
+    #program-desc, #project-desc {
 
         a {
             font: $font;
@@ -251,7 +251,7 @@ p {
 
     }
 
-    #program-info {
+    #program-info, #project-info {
 
         padding: 1em 0;
 
@@ -335,7 +335,7 @@ p {
 
         }
 
-        #program-reqs {
+        #program-reqs{
 
         // requirements tabs
 
@@ -472,6 +472,33 @@ p {
             text-align: center;
             cursor: pointer;
             border: none;
+        }
+
+        #project-reqs {
+            padding-top: 1em;
+        }
+
+        #project-process {
+
+            padding-bottom: 1.5em;
+
+            .process-images {
+                padding: 1em 0 2em 0;
+            }
+
+            .download-btn {
+                font-family: Proxima Nova;
+                font-weight: 700;
+                font-size: 14px;
+                color: #176767;
+                border-radius: 8px;
+                background-color: #F2F7F7;
+                padding: 1.5em;
+                margin-top: 1em;
+                text-align: center;
+                cursor: pointer;
+                border: none;
+            }
         }
 
 }
