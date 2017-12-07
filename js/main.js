@@ -8,19 +8,6 @@ $(function() {
         $(t).toggleClass('hide-border');
     }
 
-// Filtering Sidebar for browse.html
-
-var $grid = $('.programs-grid').isotope({
-  // options
- 	itemSelector: '.card',
- 	layoutMode: 'fitRows'
-});
-
-$(".checkbox-values").on("click", "input", function() {
-	console.log("clicked");
-    var o = $(this).attr("data-filter");
-    $grid.isotope({
-        filter: o
     // Filtering Sidebar for browse.html
     var $grid = $('.programs-grid').isotope({
         // options
