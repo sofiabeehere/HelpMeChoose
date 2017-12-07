@@ -42,3 +42,9 @@ $(function() {
 // Parallax Images
 $('.parallax-window').parallax({imageSrc: 'img/banner.png'});
 $('.env-parallax-window').parallax({imageSrc: 'img/programs/envsci.png'});
+
+// Bootstrap tooltip
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});

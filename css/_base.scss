@@ -197,7 +197,8 @@ p {
     padding-bottom: 5em;
     margin-top: -1.5em;
 
-    .breadcrumbs, .breadcrumbs a {
+    .breadcrumbs, .breadcrumbs a, {
+
         font: $font;
         font-weight: 600;
         font-size: 13px;
@@ -228,6 +229,26 @@ p {
         text-align: left;
         letter-spacing: 0.0512em;
         margin: 0;
+        padding-bottom: 1em;
+    }
+
+    #program-desc {
+
+        a {
+            font: $font;
+            font-weight: 600;
+            font-size: 13px;
+            margin: 1.5em 0;
+            letter-spacing: 0.0512em;
+            color: $darkBlue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #70a1a1;
+        }
+
     }
 
     #program-info {
@@ -261,6 +282,17 @@ p {
         tr:nth-child(4) td, tr:nth-child(4) th {
             padding: 1em 1em 1em 1em;
         }
+
+        .info-circle {
+            font: $font;
+            font-weight: 800;
+            font-size: 20px;
+            text-decoration: none;
+            color: #84aeae;
+            margin: -0.15em 0.2em;
+            cursor: pointer;
+        }
+
     }
 
     #project-examples {
