@@ -8,7 +8,7 @@ $('.env-parallax-window').parallax({imageSrc: 'img/programs/envsci.png'});
 
 $(function() {
     function toggleDropdown(t) {
-         $(t).siblings(".dropdown-content").toggle();
+        $(t).siblings(".dropdown-content").toggle();
         $(t).children(".dropdown-arrow").toggleClass('rotate');
         $(t).toggleClass('hide-border');
     }
@@ -18,8 +18,8 @@ $(function() {
 
 var $grid = $('.programs-grid').isotope({
   // options
-  itemSelector: '.card',
-  layoutMode: 'fitRows'
+ 	itemSelector: '.card',
+ 	layoutMode: 'fitRows'
 });
 
 $(".checkbox-values").on("click", "input", function() {
