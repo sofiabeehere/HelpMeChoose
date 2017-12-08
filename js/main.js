@@ -43,6 +43,7 @@ $(function() {
 $('.parallax-window').parallax({imageSrc: 'img/banner.png'});
 $('.env-parallax-window').parallax({imageSrc: 'img/programs/envsci.png'});
 $('.waste-energy-window').parallax({imageSrc: 'img/project/waste-energy-img.jpg'});
+$('.iat334-window').parallax({imageSrc: 'img/project/iat334-banner.jpg'});
 
 // Bootstrap tooltip
 

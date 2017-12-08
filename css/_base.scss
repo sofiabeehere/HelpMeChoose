@@ -484,6 +484,10 @@ p {
 
             .process-images {
                 padding: 1em 0 2em 0;
+
+                img {
+                    width: 360px;
+                }
             }
 
             .download-btn {
@@ -498,6 +502,16 @@ p {
                 text-align: center;
                 cursor: pointer;
                 border: none;
+            }
+
+            ul li{
+                font: $font;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: left;
+                letter-spacing: 0.0512em;
+                margin: 0;
             }
         }
 
