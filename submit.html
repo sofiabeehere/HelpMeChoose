@@ -1,226 +1,208 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>HelpMeChoose | Submit a Project</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
 
-        <header>
-            <div class="container">
-                <div class="row">  
-                    <div class="col-sm-4">
-                        <a href="index.html"><img src="img/logo.svg"></a>
-                    </div>
-                    <div class="col-sm-4 site-search-bar">
-                        <input type="text" name="site-search-bar" placeholder="Search entire site">
-                        <a href=""><img src="img/search.png"></a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a href="browse.html">Browse</a>
-                        <a href="submit.html">Submit</a>
-                        <a href="about.html">About</a>
-                        <img src="img/profile-icon.png" class="profile-btn">
-                    </div>
-                </div>
-            </div>
-        </header>
+<head>
+    <meta charset="utf-8">
+    <title>HelpMeChoose | Submit Your Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
 
-        <div class="banner parallax-window" data-img-src="img/banner.png" data-parallax="scroll" data-position-x="-1805px">
-        </div>
-
-        <div class = "main-submit-content">
+<body>
+    <header>
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 offset-sm-2">
-                    <h2 class="about-heading">Submit a Project</h2>
-                    <p>Are you a current or former post secondary student? Would you like to showcase your work and help others learn more about your program? Fill in the form below to submit your course project for consideration.</p>
+                <div class="col-sm-4">
+                    <a href="index.html"><img src="img/logo.svg"></a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 offset-sm-2">
-                <div class = "form-group">
-                    <label for = "first-name" class = "col-12 col-form-label"> FIRST NAME </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "text" placeholder="John" id = "first-name">
-                    </div>
-                </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class = "form-group">
-                    <label for = "last-name" class = "col-12 col-form-label"> LAST NAME </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "text" placeholder="Appleseed" id = "last-name">
-                    </div>
-                </div>
+                <div class="col-sm-4 site-search-bar">
+                    <input type="text" name="site-search-bar" placeholder="Search entire site">
+                    <a href=""><img src="img/search.png"></a>
                 </div>
                 <div class="col-sm-4">
-                    <div class = "form-group">
-                    <label for = "edu-status" class = "col-12 col-form-label"> EDUCATION STATUS </label>
-                    <div class = "col-12">
-                        <select class = "form-control" id = "edu-status">
-                        <option>Undergraduate</option>
-                        <option>Graduate</option>
-                        <option>Graduated from Program</option>
-                        </select>
-                    </div>
-                </div>
+                    <a href="browse.html">Browse</a>
+                    <a href="submit.html">Submit</a>
+                    <a href="about.html">About</a>
+                    <img src="img/profile-icon.png" class="profile-btn">
                 </div>
             </div>
+        </div>
+    </header>
+    <div class="banner parallax-window" data-img-src="img/banner.png" data-parallax="scroll" data-position-x="-1805px">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <h2 class="about-heading">Submit Your Project</h2>
+                <p>Are you a current or former post secondary student? Would you like to showcase your work and help others learn more about your program? Fill in the form below to submit your course project for consideration.</p>
+            </div>
+        </div>
+        <form class="main-submit-content" name="project_submission" action="thank-you.html" data-netlify="true">
             <div class="row">
-                <div class="col-sm-4 offset-sm-2">
-                    <div class = "form-group">
-                    <label for = "edu-status" class = "col-12 col-form-label"> NAME OF INSTITUTION </label>
-                        <div class = "col-12">
-                            <select class = "form-control" id = "institution">
-                            <option> Simon Fraser University </option>
-                            <option> University of British Columbia </option>
-                            <option> BCIT </option>
-                            </select>
+                <div class="col-sm-2 offset-sm-2">
+                    <div class="form-group">
+                        <label for="first-name" class="col-12 col-form-label"> FIRST NAME </label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="John" id="first-name" name="first_name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="last-name" class="col-12 col-form-label"> LAST NAME </label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="Appleseed" id="last-name" name="last_name">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class = "form-group">
-                    <label for = "program" class = "col-12 col-form-label"> NAME OF PROGRAM / FACULTY </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "text" placeholder="" id = "program">
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 offset-sm-2">
-                <div class = "form-group">
-                    <label for = "course-name" class = "col-12 col-form-label"> COURSE NAME </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "text" placeholder="ex. IAT 267" id = "course-name">
-                    </div>
-                </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class = "form-group">
-                    <label for = "grade" class = "col-12 col-form-label"> GRADE </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "text" placeholder="% or Letter" id = "grade">
-                    </div>
-                </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class = "form-row">
-                    <label for = "completion-date" class = "col-12 col-form-label"> COMPLETION DATE </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "date" placeholder="" id = "completion-date">
-                    </div>
-                </div>
-                </div>
-                <!-- <div class="col-sm-4 offset-sm-2">
-                    <div class = "form-group">
-                    <label for = "course-name" class = "col-12 col-form-label"> COURSE NAME </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "text" placeholder="" id = "course-name">
-                    </div>
-                </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class = "form-row">
-                    <label for = "course-name" class = "col-12 col-form-label"> COMPLETION DATE </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "date" placeholder="" id = "course-name">
-                    </div>
-                    </div>
-
-                </div> -->
-            </div>
-            <div class="row">
-                <div class="col-sm-4 offset-sm-2">
-                    <div class = "form-group">
-                    <label for = "project-name" class = "col-12 col-form-label"> PROJECT NAME </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "text" placeholder="" id = "project-name">
-                    </div>
-                </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class = "form-group">
-                    <label for = "project-type" class = "col-12 col-form-label"> TYPE OF PROJECT </label>
-                        <div class = "col-12">
-                            <select class = "form-control" id = "project-type">
-                            <option> Individual </option>
-                            <option> Group/Team </option>
+                    <div class="form-group">
+                        <label for="edu-status" class="col-12 col-form-label"> EDUCATION STATUS </label>
+                        <div class="col-12">
+                            <select class="form-control" id="edu-status" name="education_status" onchange="changeColor(this);">
+                                <option value="none" selected disabled hidden>Select a status...</option>
+                                <option value="undergraduate">Undergraduate</option>
+                                <option value="graduate">Graduate</option>
+                                <option value="graduated">Graduated from Program</option>
                             </select>
                         </div>
                     </div>
                 </div>
             </div>
-     <div class="row">
+            <div class="row">
                 <div class="col-sm-4 offset-sm-2">
-                    <div class = "form-group">
-                    <label for = "role" class = "col-12 col-form-label"> YOUR ROLE IN THE PROJECT </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "text" placeholder="" id = "role">
+                    <div class="form-group">
+                        <label for="edu-status" class="col-12 col-form-label"> NAME OF INSTITUTION </label>
+                        <div class="col-12">
+                            <select class="form-control" id="institution" name="institution_name" onchange="changeColor(this);">
+                                <option value="none" selected disabled hidden>Select a school...</option>
+                                <option value="SFU"> Simon Fraser University </option>
+                                <option value="UBC"> University of British Columbia </option>
+                                <option value="BCIT"> BCIT </option>
+                            </select>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class = "form-group">
-                    <label for = "tools" class = "col-12 col-form-label"> TOOLS USED TO COMPLETE PROJECT </label>
-                    <div class = "col-12">
-                        <input class = "form-control" type = "text" placeholder="" id = "tools">
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2">
-                    <div class = "form-group">
-                        <div class = "text-container">
-                        <label for = "project-desc"> Briefly describe the process, goals, and results of the project. </label>
-                        <textarea class = "form-control" rows = "5" id = "project-desc"></textarea>
+                    <div class="form-group">
+                        <label for="program" class="col-12 col-form-label"> NAME OF PROGRAM / FACULTY </label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="" id="program" name="program_name">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-8 offset-sm-2">
-                    <div class = "form-group">
-                        <div class = "text-container">
-                        <label for = "advice"> What advice would you give to students interested in this course / area of study? </label>
-                        <textarea class = "form-control" rows = "5" id = "advice"></textarea>
+                <div class="col-sm-2 offset-sm-2">
+                    <div class="form-group">
+                        <label for="course-name" class="col-12 col-form-label"> COURSE NAME </label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="ex. IAT 267" id="course-name" name="course_name">
                         </div>
                     </div>
-                    
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="grade" class="col-12 col-form-label"> GRADE </label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="% or Letter" id="grade" name="grade_received">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-row">
+                        <label for="completion-date" class="col-12 col-form-label"> COMPLETION DATE </label>
+                        <div class="col-12">
+                            <input class="form-control" type="date" placeholder="" id="completion-date" name="completion_date" onchange="changeColor(this);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 offset-sm-2">
+                    <div class="form-group">
+                        <label for="project-name" class="col-12 col-form-label"> PROJECT NAME </label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="" id="project-name" name="project_name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="project-type" class="col-12 col-form-label"> TYPE OF PROJECT </label>
+                        <div class="col-12">
+                            <select class="form-control" id="project-type" name="project_type" onchange="changeColor(this);">
+                                <option value="individual"> Individual </option>
+                                <option value="group-team"> Group/Team </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 offset-sm-2">
+                    <div class="form-group">
+                        <label for="role" class="col-12 col-form-label"> YOUR ROLE IN THE PROJECT </label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="" id="role" name="role_of_student">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="tools" class="col-12 col-form-label"> TOOLS USED TO COMPLETE PROJECT </label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="" id="tools" name="tools_used">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-8 offset-sm-2">
                     <div class="form-group">
-                        <div class = "file-upload">
-                        <label for="upload-img">Please upload your project photos, slides, etc.</label>
-                        <input type="file" class="form-control-file" id="upload-img">
+                        <div class="text-container">
+                            <label for="project-desc"> Briefly describe the process, goals, and results of the project. </label>
+                            <textarea class="form-control" rows="5" id="project-desc" name="project_desc"></textarea>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class = "row">
-                <button class = "submit-btn" type = "submit">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <div class="form-group">
+                        <div class="text-container">
+                            <label for="advice"> What advice would you give to students interested in this course / area of study? </label>
+                            <textarea class="form-control" rows="5" id="advice" name="student_advice"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <div class="form-group">
+                        <div class="file-upload">
+                            <label for="upload-img">Please upload your project photos, slides, etc.</label>
+                            <input type="file" class="form-control-file" id="upload-img" name="uploaded_files">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button class="submit-btn" type="submit" name="submit">
                     SUBMIT
                 </button>
             </div>
-        </div>
-        </div>
+        </form>
+    </div>
+    <!-- JS -->
+    <script src="lib/jquery-ui/external/jquery/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.3.1/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/lib/parallax/parallax.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/tabs.js"></script> -->
+</body>
 
-        <!-- JS -->
-        <script src="lib/jquery-ui/external/jquery/jquery.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.3.1/js/tether.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script src="lib/jquery-ui/jquery-ui.min.js"></script>
-        <script src="/lib/parallax/parallax.min.js"></script>
-        <script src="js/main.js"></script>      
-        <!-- <script src="js/tabs.js"></script> -->
-
-    </body>
 </html>

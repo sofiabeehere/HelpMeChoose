@@ -42,6 +42,37 @@
 		line-height: 15px;
 	}
 
+        .search-container {
+            width: 210px;
+            height: 26px;
+            margin: 1em 0 1.2em 0;
+
+            img {
+                height: 100%;
+                float: right;
+            }
+
+            .search-bar {
+                width: 178px;
+                height: 26px;
+                font-family: $font;
+                font-weight: 500;
+                font-size: 11px;
+                color: $formLabel;
+                padding-left: 1em;
+                border-radius: 8px;
+                border: transparent;
+            }
+
+            .search-bar::placeholder {
+                font-family: $font;
+                font-weight: 500;
+                font-size: 11px;
+                color: #BEBEBE;
+            }
+
+        }
+
 	.filter-dropdown button {
 		font: $font;
 		font-weight: 600;

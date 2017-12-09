@@ -1,148 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>HelpMeChoose | IAT455 Project: StegoCompare</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
 
-        <header>
-            <div class="container">
-                <div class="row">  
-                    <div class="col-sm-4">
-                        <a href="index.html"><img src="img/logo.svg"></a>
-                    </div>
-                    <div class="col-sm-4 site-search-bar">
-                        <input type="text" name="site-search-bar" placeholder="Search entire site">
-                        <a href=""><img src="img/search.png"></a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a href="browse.html">Browse</a>
-                        <a href="submit.html">Submit</a>
-                        <a href="about.html">About</a>
-                        <img src="img/profile-icon.png" class="profile-btn">
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <title>HelpMeChoose | IAT455 Project (StegoCompare)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="index.html"><img src="img/logo.svg"></a>
+                </div>
+                <div class="col-sm-4 site-search-bar">
+                    <input type="text" name="site-search-bar" placeholder="Search entire site">
+                    <a href=""><img src="img/search.png"></a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="browse.html">Browse</a>
+                    <a href="submit.html">Submit</a>
+                    <a href="about.html">About</a>
+                    <img src="img/profile-icon.png" class="profile-btn">
                 </div>
             </div>
-        </header>
-
-        <div class = "tinted-overlay">
+        </div>
+    </header>
+    <div class="tinted-overlay">
         <div class="env-sci-banner iat455-window" data-img-src="img/project/iat455.png" data-parallax="scroll">
         </div>
-        </div>
-
-        <div class = "program-heading">
-            <h2>IAT 455</h2>
-            <h3>Final Project - StegoCompare</h3>
-        </div>
-
-        <div class = "main-program-content">
-
-            <div class = "container">
-                <div class = "row">
-                    <div class = "col-9">
-                            <div class = "breadcrumbs">            
-                                <a href = "index.html">HOME</a> > <a href = "browse.html">BROWSE PROGRAMS</a> > <a href = "details_sfu_bus.html">INTERACTIVE ARTS & TECHNLOLOGY</a> > <a href = "project_iat267.html">IAT 455 - FINAL PROJECT: STEGOCOMPARE</a>
-                            </div>
-
-                            <section id="project-desc" data-anchor="project-desc">
-                                <h4> PROJECT DESCRIPTION </h4>
-
-                                <p>Our project explored steganography, the art and science of concealing messages in multimedia carriers. Many different digital image steganographic algorithms exist, each producing different outcomes in the resulting carrier image, or “stego-image”. For instance, some algorithms minimize distortion in the cover image, resulting in a higher quality and less perceptible stego-image, while others allow for greater embedding capacity. </p>
-
-                            </section>
-
-                            <section id="project-info" data-anchor="project-info">
-                                <h4> PROJECT INFORMATION </h4>
-
-                                <table style="width:100%">
-                                    <tr>
-                                        <th>School:</th>
-                                        <td>Simon Fraser University</td>
-                                        <th>Type of Project:</th>
-                                        <td>Group/Team</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Faculty:</th>
-                                        <td>Communication, Arts & Technology</td>
-                                        <th>Grade Received:</th>
-                                        <td>A+</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Course:</th>
-                                        <td>IAT 455</td>
-                                        <th>Tools Used</th>
-                                        <td>Java</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Completion Date:</th>
-                                        <td>Fall 2017</td>
-                                    </tr>
-                                </table>
-                             </section>
-
-                             <section id="project-reqs" data-anchor="project-reqs">
-                                <h4> PROJECT REQUIREMENTS </h4>
-
-                                <p>The course project in IAT 455 is intended to give students an opportunity to explore in depth a concept from the course. Students will choose a project topic that can be completed in about five weeks and that will be implemented through code. </p>
-
-                            </section>
-
-                            <section id="project-process" data-anchor="project-process">
-                                <h4> PROJECT PROCESS, GOAL, AND RESULT </h4>
-
-                                <p>Our objective was to implement different steganographic algorithms and evaluate their relative performance by comparing them based on visual inspection, histograms, peak signal to noise ratio (PSNR), and difference imaging. In our final delivery we were able to implement three steganographic algorithms: Least Significant Bit (LSB), Optimal Pixel Adjustment Process (OPAP) and Exploiting Modification Direction (EMD).</p>
-
-                                <p>Using PSNR, difference images and histograms we confirmed that our original research was sound and through further analysis can confirm that EMD was the best of the three algorithms; showing a PSNR of ~50dB indicating high quality, a difference image with little noise and a more natural-looking histogram.</p>
-
-                            </section>
-
-                            <section id="project-recs" data-anchor="project-recs">
-                                <h4> RECOMMENDATIONS & SUGGESTIONS </h4>
-
-                                <p>Define and prioritize features in order of importance, and implement the essential ones first.</p>
-
-                                 <h4>PROJECT PROVIDED BY MANDY NG</h4>
-
-                            </section>
-
+    </div>
+    <div class="program-heading">
+        <h2>IAT 455</h2>
+        <h3>Final Project - StegoCompare</h3>
+    </div>
+    <div class="main-program-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="breadcrumbs">
+                        <a href="index.html">HOME</a> > <a href="browse.html">BROWSE PROGRAMS</a> > <a href="details_sfu_bus.html">INTERACTIVE ARTS & TECHNLOLOGY</a> > <a href="project_iat267.html">IAT 455 - FINAL PROJECT: STEGOCOMPARE</a>
                     </div>
-                    <div class = "col-3">
-                        <nav class = "progress-sidebar">
+                    <section id="project-desc" data-anchor="project-desc">
+                        <h4> PROJECT DESCRIPTION </h4>
+                        <p>Our project explored steganography, the art and science of concealing messages in multimedia carriers. Many different digital image steganographic algorithms exist, each producing different outcomes in the resulting carrier image, or “stego-image”. For instance, some algorithms minimize distortion in the cover image, resulting in a higher quality and less perceptible stego-image, while others allow for greater embedding capacity. </p>
+                    </section>
+                    <section id="project-info" data-anchor="project-info">
+                        <h4> PROJECT INFORMATION </h4>
+                        <table style="width:100%">
+                            <tr>
+                                <th>School:</th>
+                                <td>Simon Fraser University</td>
+                                <th>Type of Project:</th>
+                                <td>Group/Team</td>
+                            </tr>
+                            <tr>
+                                <th>Faculty:</th>
+                                <td>Communication, Arts & Technology</td>
+                                <th>Grade Received:</th>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <th>Course:</th>
+                                <td>IAT 455</td>
+                                <th>Tools Used</th>
+                                <td>Java</td>
+                            </tr>
+                            <tr>
+                                <th>Completion Date:</th>
+                                <td>Fall 2017</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section id="project-reqs" data-anchor="project-reqs">
+                        <h4> PROJECT REQUIREMENTS </h4>
+                        <p>The course project in IAT 455 is intended to give students an opportunity to explore in depth a concept from the course. Students will choose a project topic that can be completed in about five weeks and that will be implemented through code. </p>
+                    </section>
+                    <section id="project-process" data-anchor="project-process">
+                        <h4> PROJECT PROCESS, GOAL, AND RESULT </h4>
+                        <p>Our objective was to implement different steganographic algorithms and evaluate their relative performance by comparing them based on visual inspection, histograms, peak signal to noise ratio (PSNR), and difference imaging. In our final delivery we were able to implement three steganographic algorithms: Least Significant Bit (LSB), Optimal Pixel Adjustment Process (OPAP) and Exploiting Modification Direction (EMD).</p>
+                        <p>Using PSNR, difference images and histograms we confirmed that our original research was sound and through further analysis can confirm that EMD was the best of the three algorithms; showing a PSNR of ~50dB indicating high quality, a difference image with little noise and a more natural-looking histogram.</p>
+                    </section>
+                    <section id="project-recs" data-anchor="project-recs">
+                        <h4> RECOMMENDATIONS & SUGGESTIONS </h4>
+                        <p>Define and prioritize features in order of importance, and implement the essential ones first.</p>
+                        <h4>PROJECT PROVIDED BY MANDY NG</h4>
+                    </section>
+                </div>
+                <div class="col-3">
+                    <nav class="progress-sidebar">
+                        <ul>
+                            <li><a href="#" data-scroll="project-desc">PROJECT DESCRIPTION</a></li>
+                            <li><a href="#" data-scroll="project-info">PROJECT INFORMATION</a></li>
+                            <li><a href="#" data-scroll="project-reqs">PROJECT REQUIREMENTS</a></li>
+                            <li><a href="#" data-scroll="project-process">PROJECT PROCESS</a></li>
+                            <li><a href="#" data-scroll="project-recs">RECOMMENDATIONS & SUGGESTIONS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- JS -->
+                <script src="lib/jquery-ui/external/jquery/jquery.js"></script>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.3.1/js/tether.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+                <script src="lib/jquery-ui/jquery-ui.min.js"></script>
+                <script src="/lib/parallax/parallax.min.js"></script>
+                <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+                <script src="js/main.js"></script>
+                <script src="js/tabs.js"></script>
+                <script src="js/filtering.js"></script>
+                <!-- Testing -->
+</body>
 
-                            <ul>
-
-                                <li><a href="#" data-scroll="project-desc">PROJECT DESCRIPTION</a></li>
-
-                                <li><a href="#" data-scroll="project-info">PROJECT INFORMATION</a></li>
-                                    
-                                <li><a href="#" data-scroll="project-reqs">PROJECT REQUIREMENTS</a></li>
-                                    
-                                <li><a href="#" data-scroll="project-process">PROJECT PROCESS</a></li>
-
-                                <li><a href="#" data-scroll="project-recs">RECOMMENDATIONS & SUGGESTIONS</a></li>
-
-                            </ul>
-
-                        </nav>
-                    </div>
-
-
-        <!-- JS -->
-        <script src="lib/jquery-ui/external/jquery/jquery.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.3.1/js/tether.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script src="lib/jquery-ui/jquery-ui.min.js"></script>
-        <script src="/lib/parallax/parallax.min.js"></script>
-        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/tabs.js"></script>
-        <script src="js/filtering.js"></script>
-
-        <!-- Testing -->
-
-    </body>
 </html>

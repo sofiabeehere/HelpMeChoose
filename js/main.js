@@ -11,7 +11,7 @@ $(function() {
     // Reading progress indicator for details.html
     $('.progress-sidebar a').on('click', function() {
         var scrollAnchor = $(this).attr('data-scroll'),
-        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 75;
+            scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 75;
 
         $('body,html').animate({
             scrollTop: scrollPoint
@@ -40,15 +40,19 @@ $(function() {
 });
 
 // Parallax Images
-$('.parallax-window').parallax({imageSrc: 'img/banner.png'});
-$('.env-parallax-window').parallax({imageSrc: 'img/programs/envsci.png'});
-$('.waste-energy-window').parallax({imageSrc: 'img/project/waste-energy-img.jpg'});
-$('.iat267-window').parallax({imageSrc: 'img/project/iat267.png'});
-$('.iat455-window').parallax({imageSrc: 'img/project/iat455.png'});
-$('.iat334-window').parallax({imageSrc: 'img/project/iat334-banner.jpg'});
+$('.parallax-window').parallax({ imageSrc: 'img/banner.png' });
+$('.env-parallax-window').parallax({ imageSrc: 'img/programs/envsci.png' });
+$('.waste-energy-window').parallax({ imageSrc: 'img/project/waste-energy-img.jpg' });
+$('.iat267-window').parallax({ imageSrc: 'img/project/iat267.png' });
+$('.iat455-window').parallax({ imageSrc: 'img/project/iat455.png' });
+$('.iat334-window').parallax({ imageSrc: 'img/project/iat334-banner.jpg' });
 
 // Bootstrap tooltip
-
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
+$(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
 });
+
+// Change colour on select of option on submit.html
+function changeColor(sel) {
+    sel.style.color = "#4A4A4A";
+}

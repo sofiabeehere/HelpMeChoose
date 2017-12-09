@@ -10,7 +10,8 @@
         letter-spacing: 0.05em;
     }
 
-    input, select, select:nth-child(1), textarea {
+    input, select, select:not(:first-child), textarea {
+        font: $font;
         background-color: $inputColor;
         border: none;
     }
@@ -35,9 +36,7 @@
             border: none;
             padding: 1rem;
             width: 100%;
-        }
-
-        
+        }      
     
     }
 
@@ -45,7 +44,11 @@
         padding: 0 1em;
     }
 
-    .submit-btn {
+    a {
+        text-decoration: none;
+    }
+
+    .submit-btn, .submit-again-btn {
         font: $font;
         letter-spacing: 0.02em;
         font-weight: 600;
@@ -61,9 +64,14 @@
         transition: background-color 0.5s;
         transition: color 0.5s;
         margin-top: 1.5em;
+        cursor: pointer;
     }
 
-    .submit-btn:hover {
+    .submit-again-btn {
+        width: 200px;
+    }
+
+    .submit-btn:hover, .submit-again-btn:hover {
         color: white;
         background-color: $blue;
     }

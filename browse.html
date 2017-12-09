@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>HelpMeChoose | Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-        crossorigin="anonymous">
+    <title>HelpMeChoose | Browse Programs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -32,10 +33,8 @@
             </div>
         </div>
     </header>
-
     <div class="banner parallax-window" data-img-src="img/banner.png" data-parallax="scroll" data-position-x="-1805px">
     </div>
-
     <div class="main">
         <div class="container">
             <div class="row">
@@ -44,7 +43,12 @@
             </div>
             <div class="row">
                 <div class="col-3">
-                    <form class="content" id="filter-programs" data-toggle="affix">
+                    <div class="content" id="filter-programs" data-toggle="affix">
+                        <h3> SEARCH FOR </h3>
+                        <div class="search-container">
+                            <input type="text" class="search-bar" name="search_bar" placeholder="programs / school">
+                            <img src="img/search.png">
+                        </div>
                         <h3>FILTER</h3>
                         <div class="filter-dropdowns-container">
                             <div class="filter-dropdown">
@@ -121,17 +125,26 @@
                                 </div>
                             </div>
                             <div class="filter-dropdown">
-                                <button type="button" onclick="toggleDropdown(this)" class="dropdown-btn">TUITION FEES (PER CREDIT)<img src="img/arrow.png" class="dropdown-arrow"></button>
+                                <button type="button" onclick="toggleDropdown(this)" class="dropdown-btn">TUITION FEES (PER TERM)<img src="img/arrow.png" class="dropdown-arrow"></button>
                                 <div class="dropdown-content">
-                                    <!-- TO-DO: slider for tuition fees -->
-                                    <div id="tuition-slider">
-                                        <p>$1,800</p>
-                                        <input type="range" min="0" max="1800" value="2400" class="slider" id="tuitionSlider">
-                                        <p>$2,400</p>
-                                        <label for="tuitionSlider" style="width: 100%;text-align: center;">
-                                            <span id="tuition-value">[display choice]</span>
-                                        </label>
-                                    </div>
+                                    <ul class="checkbox-values">
+                                        <li>
+                                            <input type="checkbox" id="1800_to_1999" data-filter=".1800to1999">
+                                            <label for="1800_to_1999">$1,800 - $1,999</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="2000_to_2199" data-filter=".2000to2199">
+                                            <label for="2000_to_2199">$2,000 - $2,199</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="2200_to_2299" data-filter=".2200to2299">
+                                            <label for="2200_to_2299">$2,200 - $2,299</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="2300_to_2400" data-filter=".2300to2400">
+                                            <label for="2300_to_2400">$2,300 - $2,400</label>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="filter-dropdown">
@@ -206,186 +219,186 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <div class="col-9">
                     <div class="programs-grid">
-                        <div class="card degree burnaby surrey more2yrs bus">
+                        <div class="card degree burnaby surrey more2yrs bus 2300to2400">
                             <a href="details_sfu_bus.html">
                                 <figure>
                                     <img src="img/programs/1.jpg">
                                     <figcaption>
                                         <h4>BUSINESS ADMINISTRATION</h4>
                                         <p>Simon Fraser University</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,300 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree burnaby surrey more2yrs apsci sci">
+                        <div class="card degree burnaby surrey more2yrs apsci sci 2000to2199">
                             <a href="details_ubc_cmptEng.html">
                                 <figure>
                                     <img src="img/programs/4.jpg">
                                     <figcaption>
                                         <h4>COMPUTING SCIENCE</h4>
                                         <p>Simon Fraser University</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,100 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree burnaby surrey more2yrs apsci sci">
+                        <div class="card degree burnaby surrey more2yrs apsci sci 2300to2400">
                             <a href="details_ubc_cmptEng.html">
                                 <figure>
                                     <img src="img/programs/7.jpg">
                                     <figcaption>
                                         <h4>ENGINEERING</h4>
                                         <p>Simon Fraser University</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,300 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree burnaby more2yrs env">
+                        <div class="card degree burnaby more2yrs env 2200to2299">
                             <a href="details_ubc_cmptEng.html">
                                 <figure>
                                     <img src="img/programs/14.jpg">
                                     <figcaption>
                                         <h4>ENVIRONMENT</h4>
                                         <p>Simon Fraser University</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,200 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree surrey more2yrs arts comm sci">
+                        <div class="card degree surrey more2yrs arts comm sci 2200to2299">
                             <a href="details_ubc_cmptEng.html">
                                 <figure>
                                     <img src="img/programs/10.jpg">
                                     <figcaption>
                                         <h4>INTERACTIVE ARTS &amp; TECH.</h4>
                                         <p>Simon Fraser University</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,200 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree vancouver more2yrs arts">
+                        <div class="card degree vancouver more2yrs arts 2300to2400">
                             <a href="details_ubc_cmptEng.html">
                                 <figure>
                                     <img src="img/programs/2.jpg">
                                     <figcaption>
                                         <h4>ANTHROPOLOGY</h4>
                                         <p>University of British Columbia</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,400 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree vancouver more2yrs bus">
+                        <div class="card degree vancouver more2yrs bus 2200to2299">
                             <a href="details_sfu_bus.html">
                                 <figure>
                                     <img src="img/programs/5.jpg">
                                     <figcaption>
                                         <h4>COMMERCE</h4>
                                         <p>University of British Columbia</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,200 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree vancouver more2yrs apsci sci">
+                        <div class="card degree vancouver more2yrs apsci sci 2200to2299">
                             <a href="details_ubc_cmptEng.html">
                                 <figure>
                                     <img src="img/programs/8.jpg">
                                     <figcaption>
                                         <h4>COMPUTER SCIENCE</h4>
                                         <p>University of British Columbia</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,200 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree vancouver more2yrs apsci sci">
+                        <div class="card degree vancouver more2yrs apsci sci 2300to2400">
                             <a href="http://localhost:7879/details_ubc_cmptEng.html">
                                 <figure>
                                     <img src="img/programs/15.jpg">
                                     <figcaption>
                                         <h4>COMPUTER ENGINEERING</h4>
                                         <p>University of British Columbia</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,300 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree vancouver more2yrs arts sci">
+                        <div class="card degree vancouver more2yrs arts sci 2200to2299">
                             <a href="details_ubc_cmptEng.html">
                                 <figure>
                                     <img src="img/programs/11.jpg">
                                     <figcaption>
                                         <h4>PSYCHOLOGY</h4>
                                         <p>University of British Columbia</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,200 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree burnaby less1yr bus">
+                        <div class="card degree burnaby less1yr bus 2000to2199">
                             <a href="details_sfu_bus.html">
                                 <figure>
                                     <img src="img/programs/3.jpg">
                                     <figcaption>
                                         <h4>BUSINESS ADMINISTRATION</h4>
                                         <p>BCIT</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,000 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card diploma burnaby less1yr sci">
+                        <div class="card diploma burnaby less1yr sci 2000to2199">
                             <a href="details_bcit_soSy.html">
                                 <figure>
                                     <img src="img/programs/6.jpg">
                                     <figcaption>
                                         <h4>COMPUTER IT</h4>
                                         <p>BCIT</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,000 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card diploma burnaby 1to2yr arts">
+                        <div class="card diploma burnaby 1to2yr arts 1800to1999">
                             <a href="details_ubc_cmptEng.html">
                                 <figure>
                                     <img src="img/programs/13.jpg">
                                     <figcaption>
                                         <h4>DIGITAL DESIGN & DEVELOPMENT</h4>
                                         <p>BCIT</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$1,800 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card degree burnaby more2yrs apsci sci">
+                        <div class="card degree burnaby more2yrs apsci sci 2300to2400">
                             <a href="details_ubc_cmptEng.html">
                                 <figure>
                                     <img src="img/programs/9.jpg">
                                     <figcaption>
                                         <h4>ELECTRICAL ENGINEERING</h4>
                                         <p>BCIT</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,300 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="card certificate vancouver less1yr sci">
+                        <div class="card certificate vancouver less1yr sci 2000to2199">
                             <a href="details_bcit_soSy.html">
                                 <figure>
                                     <img src="img/programs/12.jpg">
                                     <figcaption>
                                         <h4>SOFTWARE SYSTEMS</h4>
                                         <p>BCIT</p>
-                                        <button type="button" class="compare-btn">ADD TO COMPARE</button>
+                                        <button type="button" class="tuition-tag">$2,000 / term</button>
                                     </figcaption>
                                 </figure>
                             </a>
@@ -395,23 +408,22 @@
             </div>
         </div>
     </div>
-
     <!-- JS -->
     <script src="lib/jquery-ui/external/jquery/jquery.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.3.1/js/tether.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="lib/jquery-ui/jquery-ui.min.js"></script>
     <script src="/lib/parallax/parallax.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/filtering.js"></script>
     <script>
-        function toggleDropdown(t) {
-            $(t).siblings(".dropdown-content").toggle();
-            $(t).children(".dropdown-arrow").toggleClass('rotate');
-            $(t).toggleClass('hide-border');
-        }
+    function toggleDropdown(t) {
+        $(t).siblings(".dropdown-content").toggle();
+        $(t).children(".dropdown-arrow").toggleClass('rotate');
+        $(t).toggleClass('hide-border');
+    }
     </script>
 </body>
+
 </html>

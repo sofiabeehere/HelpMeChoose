@@ -39,16 +39,18 @@
 		}
 	}
 
-	.compare-btn {
+	.tuition-tag {
 		font: Proxima Nova;
 		font-weight: 600;
-		font-size: 9px;
-		width: 105px;
+		font-size: 10.5px;
+		width: 84px;
 		height: 22px;
-		color: #176767;
-		background-color: $medBlue;
+		color: white;
+		background-color: $logoYellow;
 		border-radius: 4px;
 		border: none;
+            text-align: left;
+            letter-spacing: 0.0512em;
 	}
 
 }
